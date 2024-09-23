@@ -1,5 +1,5 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const apiBaseUrl = 'https://api-document-prime-url';
+    const apiBaseUrl = 'http://localhost:3000';
 
     const recommendationsSection = document.getElementById('recommendations-list');
     const topRatedSection = document.getElementById('top-rated-list');
