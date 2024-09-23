@@ -50,6 +50,12 @@ Executandi git clone https://github.com/bg777777/Document_Prime.git
 Entre no diretório onde o projeto foi clonado:
 Executando cd Document_Prime
 
+ ### 3. Instale as Dependências
+Certifique-se de ter o Node.js instalado. Caso necessário, você pode instalar as dependências do projeto com o seguinte comando:
+
+Execute npm install
+Nota: Se o projeto não exigir um ambiente Node.js, este passo pode ser ignorado. Você pode simplesmente abrir o arquivo index.html no seu navegador.
+
 ### 4. Consuma a API
 
 O projeto faz uso de uma API externa para buscar informações sobre documentários. Certifique-se de que a API está rodando e disponível. O repositório da API pode ser encontrado no link abaixo:
