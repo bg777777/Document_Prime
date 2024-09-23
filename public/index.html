@@ -3,23 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document_Prime - Documentários sobre Mudanças Climáticas</title>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/styles.css">
-    <!-- Axios CDN -->
+    <title>Document_Prime</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="styles.css">
     <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 </head>
 <body>
-    <header>
-        <h1>Documentários - Document_Prime</h1>
+    <header class="animate__animated animate__fadeInDown">
+        <h1><i class="fas fa-film"></i> Documentários - Document_Prime</h1>
+        <p>Explore documentários sobre mudanças climáticas em diversas categorias.</p>
     </header>
 
-    <div id="app"></div> <!-- Aqui serão injetados os componentes -->
+    <section id="recommendations" class="section animate__animated animate__fadeInLeft">
+        <h2><i class="fas fa-star"></i> Recomendações de Documentários</h2>
+        <div id="recommendations-list" class="documentary-list"></div>
+    </section>
+
+    <section id="top-rated" class="section animate__animated animate__fadeInRight">
+        <h2><i class="fas fa-trophy"></i> Documentários Melhor Avaliados</h2>
+        <div id="top-rated-list" class="documentary-list"></div>
+    </section>
+
+    <section id="recent-releases" class="section animate__animated animate__fadeInUp">
+        <h2><i class="fas fa-calendar-alt"></i> Lançamentos Recentes</h2>
+        <div id="recent-releases-list" class="documentary-list"></div>
+    </section>
 
     <footer>
-        <p>Desenvolvido por Hiago Braga - Document_Prime</p>
+        <p><i class="fas fa-leaf"></i> Desenvolvido por [Seu Nome] - Document_Prime</p>
     </footer>
 
-    <script src="js/app.js" type="module"></script> <!-- Importando o script principal -->
+
+    <script src="components/RecommendationComponent.js" defer></script>
+    <script src="components/TopRatedComponent.js" defer></script>
+    <script src="components/RecentReleasesComponent.js" defer></script>
 </body>
 </html>
